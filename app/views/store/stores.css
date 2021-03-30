@@ -1,0 +1,14 @@
+.stores-button-label {
+    horizontal-align: center;
+    text-wrap: true;
+    vertical-alignment: middle;
+}
+
+.direction-button-span {
+    font-family: "FredokaOne", "FredokaOne-Regular";
+    font-weight: 2000;
+    font-size: 120;
+    color: #63371E;
+    text: Maco;
+    opacity: 0.5;
+}

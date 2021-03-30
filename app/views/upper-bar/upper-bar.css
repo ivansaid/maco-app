@@ -1,0 +1,16 @@
+.upper-action-bar {
+    background-color: #95C22B
+}
+
+.upper-action-bar-label {
+    horizontal-alignment: center;
+    text-wrap: true;
+    verticalAlignment: middle;
+}
+
+.upper-action-bar-span {
+    color: #63371E;
+    text: Maco;
+    font-family: "FredokaOne", "FredokaOne-Regular";
+    font-size: 40;
+}

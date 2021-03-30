@@ -1,0 +1,7 @@
+@import "~@nativescript/theme/css/core.css";
+@import "views/login/login.css";
+@import "views/phone-number-text-field/cellphone.css";
+@import "views/bottom-navigation/bottom-bar.css";
+@import "views/store/stores.css";
+@import "views/upper-bar/upper-bar.css";
+@import "views/stores-list/store-list.css";

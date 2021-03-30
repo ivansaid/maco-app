@@ -1,0 +1,31 @@
+.store-list {
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.address-bar {
+    background-color: #95C22B;
+    borderRadius: 10;
+    height: 50;
+    margin: 10;
+    border-radius: 10;
+    border-color: #63371E;
+    border-width: 5;
+}
+
+.address-icon {
+    col: 0;
+    row: 0;
+    tint-color: #63371E;
+}
+
+.address-text {
+    col: 1;
+    font-family: "BreeSerif", "BreeSerif-Regular";
+    hint: "Av . 45 # 34 -54";
+    row: 0;
+    font-size: "30";
+    color: white;
+}
+
+

@@ -1,0 +1,42 @@
+.mainTitle {
+    font-family: "FredokaOne", "FredokaOne-Regular";
+    font-weight: 2000;
+    font-size: 120;
+    color: #63371E;
+    text: Maco;
+}
+
+.registerButton {
+    border-radius: 5;
+    background-color: #63371E;
+    color: #ffffff;
+    text: Registrarme;
+    height: 50;
+    width: 300;
+    font-family: "FredokaOne", "FredokaOne-Regular";
+    align-items: center;
+    justify-content: space-around;
+    font-size: 23,
+}
+
+.flexboxLayoutLogin {
+    background-color: #219B54;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leafImage {
+    height: 140;
+    tint-color: #507B00;
+}
+
+.loginPage {
+    action-bar-hidden: true
+}
+
+.titleLabel {
+    horizontal-align: center;
+    text-wrap: true;
+    vertical-alignment: middle;
+}

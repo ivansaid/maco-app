@@ -1,42 +1,23 @@
-<page {...pageProps}>
-    <flexboxLayout {...flexboxLayoutProps}>
-        <label horizontalAlignment="center" textWrap="true" verticalAlignment="middle">
+<page class="loginPage">
+    <flexboxLayout class="flexboxLayoutLogin">
+        <label class="titleLabel">
             <formattedString>
-                <span class="fas t-18" color="#63371E" text="Maco"/>
+                <span class="mainTitle"/>
             </formattedString>
         </label>
-        <image {...imageProps} tintColor="{leafTintColor}"></image>
+        <image class="leafImage" src="~/icons/seedling-solid.png"></image>
         <PhoneTextField setCode={setCode} setPhone={setPhone}/>
-
-        <button {...buttonProps}/>
+        <button class="registerButton" on:tap={()=>goToStores()}/>
     </flexboxLayout>
 </page>
 
-<script lang="typescript">
-    import PhoneTextField from "./phoneNumberTextField/PhoneTextField.svelte"
+<script>
+    import PhoneTextField from "../phone-number-text-field/PhoneTextField.svelte"
+    import Stores from "../main/Main.svelte"
+    import {navigate} from 'svelte-native'
 
-    const pageProps: { [id: string]: string; } = {actionBarHidden: "true"}
-    const flexboxLayoutProps = {
-        backgroundColor: "#95C22B",
-        flexDirection: "column", justifyContent: "space-around", alignItems: "center"
-    }
-    const buttonProps = {
-        borderRadius: "5",
-        backgroundColor: "#63371E",
-        class: "my-button",
-        color: "#A7D930",
-        text: "Registrarme",
-        height: 50,
-        width: 300
-    }
-    const imageProps = {
-        height: "80",
-        src: "~/icons/seedling-solid.png",
-    }
-
-    let leafTintColor = "#507B00"
-    let code: string = "+57"
-    let phone: string = ""
+    let code = "+57"
+    let phone = ""
 
     const setCode = (newCode) => {
         code = newCode
@@ -44,21 +25,8 @@
     const setPhone = (newPhone) => {
         phone = newPhone
     }
+    const goToStores = () => {
+        navigate({page: Stores})
+    }
 </script>
-
-<style>
-
-    .fa_custom {
-        color: #0099CC
-    }
-
-    .fas {
-        font-family: "Font Awesome 5 Free", "fa-solid-900";
-        font-weight: 2000;
-    }
-
-    .t-18 {
-        font-size: 120;
-    }
-</style>
 
