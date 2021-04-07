@@ -1,21 +1,20 @@
 <bottomNavigation>
     <tabStrip class="bottomTabStrip">
-        <tabStripItem>
+        <tabStripItem backgroundColor={firstTabColor} on:tap={()=>first()}>
             <label class="bottom-label" text="Home"/>
-            <image src="~/icons/tree-solid.png"/>
+            <image src="~/icons/tree.png"/>
         </tabStripItem>
-        <tabStripItem>
-            <label class="bottom-label" text="Buscar"/>
-            <image src="~/icons/search-solid.png"/>
+        <tabStripItem backgroundColor={secondTabColor} on:tap={()=>second()}>
+                <label class="bottom-label" text="Buscar"/>
+            <image src="~/icons/search.png"/>
         </tabStripItem>
-        <tabStripItem>
+        <tabStripItem backgroundColor={thirdTabColor} on:tap={()=>three()}>
             <label class="bottom-label" text="Cuenta"/>
-            <image src="~/icons/user-solid.png"/>
+            <image src="~/icons/person.png"/>
         </tabStripItem>
     </tabStrip>
-
     <tabContentItem>
-        <Stores/>
+        <StoreLists changeVisibility={changeVisibility}/>
     </tabContentItem>
     <tabContentItem>
         <gridLayout>
@@ -31,5 +30,28 @@
 </bottomNavigation>
 
 <script>
-    import Stores from '../stores-list/StoresList.svelte'
+    import StoreLists from '../category-list/CategoryList.svelte'
+
+    export let changeVisibility
+    let firstTabColor = "#EBA40F"
+    let secondTabColor = "#748E1F"
+    let thirdTabColor = "#748E1F"
+
+    const first = () => {
+        firstTabColor = "#EBA40F"
+        secondTabColor = "#748E1F"
+        thirdTabColor = "#748E1F"
+    }
+    const second = () => {
+        firstTabColor = "#748E1F"
+        secondTabColor = "#EBA40F"
+        thirdTabColor = "#748E1F"
+    }
+    const three = () => {
+        firstTabColor = "#748E1F"
+        secondTabColor = "#748E1F"
+        thirdTabColor = "#EBA40F"
+    }
+
+
 </script>

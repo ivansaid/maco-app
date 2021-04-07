@@ -1,38 +1,29 @@
-.mainTitle {
-    font-family: "FredokaOne", "FredokaOne-Regular";
-    font-weight: 2000;
-    font-size: 120;
-    color: #63371E;
-    text: Maco;
-}
-
-.registerButton {
-    border-radius: 5;
-    background-color: #63371E;
-    color: #ffffff;
+.register-button {
+    margin-top: 10%;
+    border-radius: 10;
+    background-color: #EBA40F;
+    color: #000000;
     text: Registrarme;
-    height: 50;
-    width: 300;
-    font-family: "FredokaOne", "FredokaOne-Regular";
+    height: 8%;
+    width: 50%;
+    font-family: "Montserrat", "Montserrat-Regular";
     align-items: center;
     justify-content: space-around;
-    font-size: 23,
+    font-size: 20vw;
 }
 
-.flexboxLayoutLogin {
-    background-color: #219B54;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.main-layout-login {
+    align-content: space-around;
 }
 
-.leafImage {
-    height: 140;
-    tint-color: #507B00;
+.login-icon {
+    tint-color: #EBA40F;
 }
 
-.loginPage {
-    action-bar-hidden: true
+.login-page {
+    padding: 30;
+    action-bar-hidden: true;
+    background-color: #748E1F;
 }
 
 .titleLabel {
@@ -40,3 +31,4 @@
     text-wrap: true;
     vertical-alignment: middle;
 }
+

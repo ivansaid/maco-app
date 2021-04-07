@@ -1,32 +1,47 @@
-<page class="loginPage">
-    <flexboxLayout class="flexboxLayoutLogin">
-        <label class="titleLabel">
-            <formattedString>
-                <span class="mainTitle"/>
-            </formattedString>
-        </label>
-        <image class="leafImage" src="~/icons/seedling-solid.png"></image>
+<page class="login-page">
+    <stacklayout class="main-layout-login" margin="10">
+        <image class="login-icon" height="40%" src="~/icons/maco_with_name.png" stretch="aspectFit"
+               width="70%"></image>
         <PhoneTextField setCode={setCode} setPhone={setPhone}/>
-        <button class="registerButton" on:tap={()=>goToStores()}/>
-    </flexboxLayout>
+        <button class="register-button" on:tap={()=>goToStores()}/>
+    </stacklayout>
 </page>
 
 <script>
+
     import PhoneTextField from "../phone-number-text-field/PhoneTextField.svelte"
     import Stores from "../main/Main.svelte"
-    import {navigate} from 'svelte-native'
+    import {navigate} from "svelte-native";
+    import {onMount, onDestroy} from "svelte"
+    import * as application from "@nativescript/core/application"
+    import {NativeViewElementNode} from "svelte-native/dom";
 
+
+    export let isStart = false
     let code = "+57"
     let phone = ""
 
+    if (application.android) {
+        application.android.on(application.AndroidApplication.activityBackPressedEvent,()  => {
+            application.exitEvent
+        });
+    }
+
+
     const setCode = (newCode) => {
+
         code = newCode
     }
     const setPhone = (newPhone) => {
         phone = newPhone
     }
+    onMount(() => {
+        console.log(application.exitEvent)
+    })
+
     const goToStores = () => {
         navigate({page: Stores})
     }
+
 </script>
 

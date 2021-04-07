@@ -1,41 +1,38 @@
 .picker {
-    background-color: #63371E;
+    background-color: #84A86A;
     color: #ffffff;
     border-radius: 5;
-    width: 200;
     height: 50;
-    vertical-align: baseline;
     align-content: center;
-    font-size: 50;
+    font-size: 30%;
 }
 
 .textField {
-    justify-content: space-around;
-    background-color: #63371E;
     color: #ffffff;
     border-radius: 5;
-    width: 200;
+    width: 300;
     height: 50;
-    vertical-align: baseline;
-    horizontal-align: center;
-    col: 2;
-    row: 0;
-    hint: # # # # # #;
     keyboard-type: phone;
     text-align: center;
-    horizontal-align: center;
-    font-size: 20;
-    font-family: "FredokaOne", "FredokaOne-Regular";
-    font-weight: bold;
+    font-size: 15%;
+    font-family: "Montserrat", "Montserrat-Regular";
 }
 
 .enterText {
-    row: 0;
-    col: 0;
-    color: #63371E;
+    align-self: flex-start;
+    justify-content: flex-start;
+    color: #ffffff;
     text: Ingresa tu numero de telefono:;
-    font-size: 21;
-    font-family: "FredokaOne", "FredokaOne-Regular";
-
+    font-size: 20%;
+    font-family: "Montserrat", "Montserrat-Regular";
 }
 
+
+.enter-text-label {
+    margin-bottom: 10%;
+}
+
+.info-stack {
+    margin-top: 10%;
+    margin-bottom: 2%;
+}

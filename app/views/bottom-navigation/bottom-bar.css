@@ -1,9 +1,6 @@
 .bottom-label {
-    font-family: "FredokaOne", "FredokaOne-Regular";
-    font-size: 15;
-    color: #ffffff;
+    font-family: "Montserrat", "Montserrat-Regular";
+    font-size: 20;
+    color: #000000;
 }
 
-.bottomTabStrip {
-    background-color: #63371E;
-}

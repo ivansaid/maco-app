@@ -1,0 +1,18 @@
+.flexbox-list {
+    background-color: #f6f6f6;
+    border-top-color: #eaeaea;
+    border-top-width: 3;
+    margin-left: 5;
+    margin-right: 5;
+}
+
+
+.nursery-image {
+    height: 50;
+    width: 50;
+}
+
+.template-nursery {
+    padding: 30;
+
+}

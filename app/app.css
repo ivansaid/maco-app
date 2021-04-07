@@ -4,4 +4,6 @@
 @import "views/bottom-navigation/bottom-bar.css";
 @import "views/store/stores.css";
 @import "views/upper-bar/upper-bar.css";
-@import "views/stores-list/store-list.css";
+@import "views/category-list/store-list.css";
+@import "views/list/category-tabs.css";
+@import "views/list/list.css";
