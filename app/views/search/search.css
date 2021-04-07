@@ -1,0 +1,26 @@
+.button-search {
+    background-color: #EBA40F;
+}
+
+.search-text {
+    hint: Ingresa items a buscar;
+    font-family: "Montserrat", "Montserrat-Regular";
+    vertical-align: center;
+    col: 1;
+    row: 0;
+    color: #000000;
+    font-size: 15;
+}
+
+.flexbox-example{
+    font-family: "Montserrat", "Montserrat-Regular";
+    horizontal-align: center;
+    vertical-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #EBA40F;
+}
+
+.label-example{
+    font-size: 17;
+}

@@ -7,31 +7,15 @@
             </grid-layout>
         </actionBar>
     {/if}
-    <svelte:component {...props[props.length - 1]} changeComponent={addComponent} this={selected[selected.length-1]}/>
+    <svelte:component props={props[props.length - 1]} addComponent={addComponent} this={selected[selected.length-1]}/>
 </stackLayout>
 
 
 <script>
     import List from "../list/List.svelte"
-    import Store from "../store/Store.svelte"
 
-    export let changeVisibility
-    export let goBackToComponent
-    export let selected = [List]
-    export let props = [{}]
-    export let visibility = ["hidden"]
-
-
-    const addComponent = (component, componentProps) => {
-        switch (component) {
-            case "store":
-                selected = selected.concat(...selected, Store)
-                props = props.concat(...props, componentProps)
-                changeVisibility("visible")
-                visibility = visibility.concat(...visibility, "visible")
-        }
-    }
-
-
+    export let selected
+    export let props
+    export let addComponent
 </script>
-=
+

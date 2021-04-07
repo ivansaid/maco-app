@@ -1,10 +1,5 @@
-<absolute-layout class="x" margin="10">
-    <textView editable="{false}" fontSize="20" heigth="10" on:tap={()=>{goTo()}} width="120">
-        <formattedString>
-            <span text={number}/>
-        </formattedString>
-    </textView>
-</absolute-layout>
+<image class="nursery-image"
+       src="https://images.unsplash.com/photo-1617798087281-c1a1b8784ce9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"></image>
 
 
 <script>
@@ -13,10 +8,6 @@
 
     export let number
     export let changeComponent
-
-    const goTo = () => {
-        changeComponent("store", {props: {comingFrom: number, changeComponent: changeComponent}})
-    }
 
 </script>
 

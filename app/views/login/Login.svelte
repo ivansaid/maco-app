@@ -1,4 +1,4 @@
-<page class="login-page">
+<page backgroundColor="#748E1F" class="login-page">
     <stacklayout class="main-layout-login" margin="10">
         <image class="login-icon" height="40%" src="~/icons/maco_with_name.png" stretch="aspectFit"
                width="70%"></image>
@@ -12,9 +12,8 @@
     import PhoneTextField from "../phone-number-text-field/PhoneTextField.svelte"
     import Stores from "../main/Main.svelte"
     import {navigate} from "svelte-native";
-    import {onMount, onDestroy} from "svelte"
+    import {onMount} from "svelte"
     import * as application from "@nativescript/core/application"
-    import {NativeViewElementNode} from "svelte-native/dom";
 
 
     export let isStart = false
@@ -22,7 +21,7 @@
     let phone = ""
 
     if (application.android) {
-        application.android.on(application.AndroidApplication.activityBackPressedEvent,()  => {
+        application.android.on(application.AndroidApplication.activityBackPressedEvent, () => {
             application.exitEvent
         });
     }

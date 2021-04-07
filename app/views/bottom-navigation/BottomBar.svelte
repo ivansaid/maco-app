@@ -1,11 +1,13 @@
-<bottomNavigation>
+<bottomNavigation on:selectedIndexChanged={(item)=>{
+    tabSelected(item)
+}}>
     <tabStrip class="bottomTabStrip">
         <tabStripItem backgroundColor={firstTabColor} on:tap={()=>first()}>
             <label class="bottom-label" text="Home"/>
             <image src="~/icons/tree.png"/>
         </tabStripItem>
         <tabStripItem backgroundColor={secondTabColor} on:tap={()=>second()}>
-                <label class="bottom-label" text="Buscar"/>
+            <label class="bottom-label" text="Buscar"/>
             <image src="~/icons/search.png"/>
         </tabStripItem>
         <tabStripItem backgroundColor={thirdTabColor} on:tap={()=>three()}>
@@ -14,11 +16,11 @@
         </tabStripItem>
     </tabStrip>
     <tabContentItem>
-        <StoreLists changeVisibility={changeVisibility}/>
+        <CategoryLists addComponent={addComponentCategoryTab} props={props} selected={selected}/>
     </tabContentItem>
     <tabContentItem>
         <gridLayout>
-            <label class="h2 text-center" text="Search Page"/>
+            <Search addComponent={addComponentCategoryTab} props={props} selected={selected}/>
         </gridLayout>
     </tabContentItem>
     <tabContentItem>
@@ -30,9 +32,9 @@
 </bottomNavigation>
 
 <script>
-    import StoreLists from '../category-list/CategoryList.svelte'
+    import CategoryLists from '../category-list/CategoryList.svelte'
+    import Search from '../search/Search.svelte'
 
-    export let changeVisibility
     let firstTabColor = "#EBA40F"
     let secondTabColor = "#748E1F"
     let thirdTabColor = "#748E1F"
@@ -53,5 +55,9 @@
         thirdTabColor = "#EBA40F"
     }
 
-
+    export let selected
+    export let props
+    export let visibility
+    export let addComponentCategoryTab
+    export let tabSelected
 </script>

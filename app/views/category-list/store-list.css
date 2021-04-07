@@ -4,13 +4,8 @@
 }
 
 .address-bar {
-    background-color: #8E8A88;
-    borderRadius: 10;
-    height: 80;
+    height: 70;
     margin: 10;
-    border-radius: 10;
-    border-color: #EBA40F;
-    border-width: 5;
 }
 
 .address-icon {
@@ -21,11 +16,12 @@
 
 .address-text {
     col: 1;
+    vertical-align: center;
     font-family: "Montserrat", "Montserrat-Regular";
     hint: Ingresa tu direccion;
     row: 0;
     font-size: 15;
-    color: white;
+    color: #000000;
 }
 
 

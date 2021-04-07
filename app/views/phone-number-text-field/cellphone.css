@@ -33,6 +33,8 @@
 }
 
 .info-stack {
+    horizontal-align: center;
+    vertical-align: center;
     margin-top: 10%;
     margin-bottom: 2%;
 }

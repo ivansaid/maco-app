@@ -1,8 +1,7 @@
 .category-button {
-    width: 160;
+    width: 140;
     border-radius: 15;
     color: #000000;
-    border-color: #ffad12;
     border-width: 3;
     font-family: "Montserrat", "Montserrat-Regular";
     background-color: #EBA40F;
@@ -10,10 +9,10 @@
 }
 
 .category-buttons-stack {
-    margin: 10;
+    margin-right: 10;
+    margin-left: 10;
     horizontal-align: center;
     vertical-align: center;
     orientation: horizontal;
-    margin-bottom: 30;
-    margin-top: 30;
+    margin-bottom: 10;
 }
