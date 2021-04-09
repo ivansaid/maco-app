@@ -1,8 +1,9 @@
 <stackLayout backgroundColor="white">
     <actionBar class="address-bar">
-        <grid-layout columns="70, *" rows="*">
+        <grid-layout columns="68, *" rows="*">
             <textField class="search-text" on:textChange={(val)=>{}}></textField>
-            <button class="button-search">buscar</button>
+            <button class="button-search"/>
+            <image class="address-icon" src="~/icons/noun_Location.png"/>
         </grid-layout>
     </actionBar>
     {#if selected[selected.length - 1].name.replace("Proxy<", "").replace(">", "") === "SearchExample"}
@@ -12,7 +13,7 @@
 
 
 <script>
-    import SearchExample from "../search/SearchExample.svelte"
+    import SearchExample from "../messages/SearchExample.svelte"
 
     export let selected
     export let props

@@ -9,7 +9,7 @@
     import BottomBar from '../bottom-navigation/BottomBar.svelte'
     import Store from "../store/Store.svelte";
     import List from "../list/List.svelte";
-    import SearchExample from '../search/SearchExample.svelte'
+    import SearchExample from '../messages/SearchExample.svelte'
     import * as application from "@nativescript/core/application"
     import {AndroidApplication, AndroidActivityBackPressedEventData} from "@nativescript/core/application"
 

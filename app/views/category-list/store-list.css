@@ -4,11 +4,24 @@
 }
 
 .address-bar {
+    background-color: white;
     height: 70;
-    margin: 10;
+    margin-bottom: 10;
+}
+
+.address-button {
+    col: 0;
+    row: 0;
+    width: 120;
+    border-radius: 10;
+    background-color: #f1f1f1;
+    border-color: #eaeaea;
+    border-left-width: 3.5;
+    border-bottom-width: 3.5;
 }
 
 .address-icon {
+    width: 30;
     col: 0;
     row: 0;
     tint-color: #EBA40F;

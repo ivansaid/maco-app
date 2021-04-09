@@ -1,0 +1,12 @@
+.flexbox-example {
+    font-family: "Montserrat", "Montserrat-Regular";
+    horizontal-align: center;
+    vertical-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #EBA40F;
+}
+
+.label-example {
+    font-size: 17;
+}

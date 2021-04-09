@@ -1,11 +1,14 @@
 .category-button {
     width: 140;
-    border-radius: 15;
-    color: #000000;
-    border-width: 3;
+    border-radius: 10;
+    background-color: #f1f1f1;
+    border-color: #eaeaea;
+    border-left-width: 3.5;
+    border-bottom-width: 3.5;
+    color: #84A86A;
     font-family: "Montserrat", "Montserrat-Regular";
-    background-color: #EBA40F;
     font-size: 17;
+    font-weight: 600;
 }
 
 .category-buttons-stack {

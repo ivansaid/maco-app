@@ -1,7 +1,7 @@
 <stackLayout class="info-stack">
     <label class="enter-text-label" textWrap="true" verticalAlignment="middle">
         <formattedString>
-            <span class="enterText"/>
+            <span class="enterText" text="Ingresa tu numero de telefono:"/>
         </formattedString>
     </label>
     <stackLayout class="number-field" orientation="horizontal">
